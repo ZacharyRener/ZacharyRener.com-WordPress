@@ -14,11 +14,11 @@ jobs:
       #
       # Run build
       #
-      - uses: actions/setup-node@v3
-        with:
-          node-version: "18.3.0"
-          cache: "npm"
-          cache-dependency-path: "**/package-lock.json"
+      # - uses: actions/setup-node@v3
+      #   with:
+      #     node-version: "18.3.0"
+      #     cache: "npm"
+      #     cache-dependency-path: "**/package-lock.json"
 
       # - name: Install dependencies
       #   working-directory: ./wp-content/themes/afcny/_html
