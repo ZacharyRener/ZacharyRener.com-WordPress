@@ -1,0 +1,113 @@
+{
+    "key": "group_65dba01ec1b93",
+    "title": "Single - Page - Home",
+    "fields": [
+        {
+            "key": "field_65dba0591c3a9",
+            "label": "Mainstage",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "graphql_field_name": "",
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_65dba1390d77d",
+            "label": "Mainstage",
+            "name": "mainstage",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "graphql_field_name": "mainstage",
+            "clone": [
+                "field_65dba0d49cfa8"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_65dba14e0d77e",
+            "label": "Featured Projects",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "graphql_field_name": "featuredProjects",
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_65dba15b0d77f",
+            "label": "Featured Projects",
+            "name": "featured_projects",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "graphql_field_name": "featuredProjects",
+            "clone": [
+                "field_65dba1099d1dc"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 1,
+    "graphql_field_name": "singlePageHome",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1708897210
+}

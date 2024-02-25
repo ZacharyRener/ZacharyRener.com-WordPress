@@ -4,7 +4,7 @@
 
 function custom_admin_css() {
     echo '<style>
-    #menu-posts, #menu-comments {
+    #menu-posts, #menu-comments, div#commentsdiv, div#pageparentdiv, div#wpfooter, div#preview-action  {
         display: none !important;
     }
     </style>';

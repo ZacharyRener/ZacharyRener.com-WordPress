@@ -1,0 +1,86 @@
+{
+    "key": "group_65dba5bcc5d19",
+    "title": "Page Builder",
+    "fields": [
+        {
+            "key": "field_65dba5bd0d086",
+            "label": "Page Builder",
+            "name": "page_builder",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_65dba5cb468bf": {
+                    "key": "layout_65dba5cb468bf",
+                    "name": "image_and_text",
+                    "label": "Image and Text",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65dba5fe0d087",
+                            "label": "Image and Text",
+                            "name": "image_and_text",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "graphql_field_name": "imageAndText",
+                            "clone": [
+                                "field_65dba46e3bded"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Row",
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "pageBuilder",
+            "graphql_non_null": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 1,
+    "graphql_field_name": "pageBuilder",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1708897205
+}

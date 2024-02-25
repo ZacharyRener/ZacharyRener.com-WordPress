@@ -1,0 +1,391 @@
+{
+    "key": "group_65dba008392ef",
+    "title": "Components",
+    "fields": [
+        {
+            "key": "field_65dba0d49cfa8",
+            "label": "Mainstage",
+            "name": "mainstage",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "mainstage",
+            "graphql_non_null": 0,
+            "sub_fields": [
+                {
+                    "key": "field_65dba0dd9cfa9",
+                    "label": "Headline",
+                    "name": "headline",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "show_in_graphql": 1,
+                    "graphql_description": "",
+                    "graphql_field_name": "headline",
+                    "graphql_non_null": 0
+                },
+                {
+                    "key": "field_65dba0f09cfaa",
+                    "label": "Guide Label",
+                    "name": "guide_label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "show_in_graphql": 1,
+                    "graphql_description": "",
+                    "graphql_field_name": "guideLabel",
+                    "graphql_non_null": 0
+                }
+            ]
+        },
+        {
+            "key": "field_65dba1099d1dc",
+            "label": "Featured Projects",
+            "name": "featured_projects",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "featuredProjects",
+            "graphql_non_null": 0,
+            "sub_fields": [
+                {
+                    "key": "field_65dba1139d1dd",
+                    "label": "Featured Projects",
+                    "name": "featured_projects",
+                    "aria-label": "",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "projects"
+                    ],
+                    "post_status": "",
+                    "taxonomy": "",
+                    "return_format": "object",
+                    "multiple": 1,
+                    "allow_null": 0,
+                    "bidirectional": 0,
+                    "show_in_graphql": 1,
+                    "graphql_description": "",
+                    "graphql_field_name": "featuredProjects",
+                    "graphql_connection_type": "one_to_many",
+                    "ui": 1,
+                    "bidirectional_target": []
+                }
+            ]
+        },
+        {
+            "key": "field_65dba4503bdea",
+            "label": "Hero",
+            "name": "hero",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "hero",
+            "graphql_non_null": 0,
+            "sub_fields": [
+                {
+                    "key": "field_65dba45b3bdeb",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "show_in_graphql": 1,
+                    "graphql_description": "",
+                    "graphql_field_name": "title",
+                    "graphql_non_null": 0
+                },
+                {
+                    "key": "field_65dba45f3bdec",
+                    "label": "Excerpt",
+                    "name": "excerpt",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "",
+                    "show_in_graphql": 1,
+                    "graphql_description": "",
+                    "graphql_field_name": "excerpt",
+                    "graphql_non_null": 0
+                }
+            ]
+        },
+        {
+            "key": "field_65dba46e3bded",
+            "label": "Image and Text",
+            "name": "image_and_text",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "imageAndText",
+            "graphql_non_null": 0,
+            "sub_fields": [
+                {
+                    "key": "field_65dba47a3bdee",
+                    "label": "Text",
+                    "name": "text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "show_in_graphql": 1,
+                    "graphql_description": "",
+                    "graphql_field_name": "text",
+                    "graphql_non_null": 0
+                },
+                {
+                    "key": "field_65dba4aa3bdf0",
+                    "label": "Media Type",
+                    "name": "media_type",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "photo": "Photo",
+                        "video": "Video"
+                    },
+                    "default_value": "",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "layout": "vertical",
+                    "show_in_graphql": 1,
+                    "graphql_description": "",
+                    "graphql_field_name": "mediaType",
+                    "graphql_non_null": 0,
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_65dba4863bdef",
+                    "label": "Image",
+                    "name": "image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_65dba4aa3bdf0",
+                                "operator": "==",
+                                "value": "photo"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "show_in_graphql": 1,
+                    "graphql_description": "",
+                    "graphql_field_name": "image"
+                },
+                {
+                    "key": "field_65dba4de3bdf1",
+                    "label": "Video",
+                    "name": "video",
+                    "aria-label": "",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_65dba4aa3bdf0",
+                                "operator": "==",
+                                "value": "video"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "show_in_graphql": 1,
+                    "graphql_description": "",
+                    "graphql_field_name": "video"
+                },
+                {
+                    "key": "field_65dba5173bdf3",
+                    "label": "Categories",
+                    "name": "categories",
+                    "aria-label": "",
+                    "type": "taxonomy",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "taxonomy": "category",
+                    "add_term": 1,
+                    "save_terms": 1,
+                    "load_terms": 1,
+                    "return_format": "object",
+                    "field_type": "checkbox",
+                    "bidirectional": 0,
+                    "show_in_graphql": 1,
+                    "graphql_description": "",
+                    "graphql_field_name": "categories",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "bidirectional_target": []
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 1,
+    "graphql_field_name": "components",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1708897183
+}

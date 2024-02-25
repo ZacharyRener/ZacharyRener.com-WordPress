@@ -1,0 +1,159 @@
+{
+    "key": "group_65dba3d8a79b3",
+    "title": "Single - Project",
+    "fields": [
+        {
+            "key": "field_65dba3d91ddb2",
+            "label": "Hero",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "graphql_field_name": "",
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_65dba66b33bad",
+            "label": "Hero",
+            "name": "hero",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "graphql_field_name": "hero",
+            "clone": [
+                "field_65dba4503bdea"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_65dba4041ddb3",
+            "label": "Page Content",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "graphql_field_name": "",
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_65dba6238921e",
+            "label": "Page Builder",
+            "name": "page_builder",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "graphql_field_name": "pageBuilder",
+            "clone": [
+                "field_65dba5bd0d086"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_65dba9c361e29",
+            "label": "Page Options",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "graphql_field_name": "pageOptions",
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_65dba9cd61e2a",
+            "label": "Categories",
+            "name": "categories",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "object",
+            "field_type": "checkbox",
+            "bidirectional": 0,
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "categories",
+            "multiple": 0,
+            "allow_null": 0,
+            "bidirectional_target": []
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "projects"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 1,
+    "graphql_field_name": "singleProject",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1708897215
+}
