@@ -101,3 +101,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+define( 'HEADLESS_MODE_CLIENT_URL', 'https://zacharyrener.com' );

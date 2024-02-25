@@ -1,0 +1,5 @@
+.github
+.gitignore
+readme.md
+wp-content/themes/themename/_html/node_modules/
+wp-content/wp-defender-secrets.php
