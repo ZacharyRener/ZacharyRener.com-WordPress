@@ -112,7 +112,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -123,9 +123,6 @@
             "return_format": "object",
             "field_type": "checkbox",
             "bidirectional": 0,
-            "show_in_graphql": 1,
-            "graphql_description": "",
-            "graphql_field_name": "categories",
             "multiple": 0,
             "allow_null": 0,
             "bidirectional_target": []
@@ -136,11 +133,11 @@
             "name": "featured_image",
             "aria-label": "",
             "type": "image",
-            "instructions": "",
+            "instructions": "This will show on the homepage",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -153,7 +150,48 @@
             "max_height": "",
             "max_size": "",
             "mime_types": "",
-            "preview_size": "medium"
+            "preview_size": "thumbnail"
+        },
+        {
+            "key": "field_66f480bc9ae91",
+            "label": "Featured Buttons",
+            "name": "featured_buttons",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "These will show on the homepage",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_66f481049ae94",
+                    "label": "Button",
+                    "name": "button",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "parent_repeater": "field_66f480bc9ae91"
+                }
+            ]
         }
     ],
     "location": [
@@ -176,5 +214,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1727299350
+    "modified": 1727300049
 }
