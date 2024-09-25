@@ -41,7 +41,7 @@
             "display": "seamless",
             "layout": "block",
             "prefix_label": 0,
-            "prefix_name": 0
+            "prefix_name": 1
         },
         {
             "key": "field_65dba4041ddb3",
@@ -155,5 +155,5 @@
     "graphql_field_name": "singleProject",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1708897215
+    "modified": 1708906103
 }

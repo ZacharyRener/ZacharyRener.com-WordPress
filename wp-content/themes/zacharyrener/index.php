@@ -2,6 +2,6 @@
 
 // get_header();
 
-header("Location: /wp-admin");
+// header("Location: /wp-admin");
 
 // get_footer();

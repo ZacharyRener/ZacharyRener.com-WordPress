@@ -44,7 +44,7 @@
                             "display": "seamless",
                             "layout": "block",
                             "prefix_label": 0,
-                            "prefix_name": 0
+                            "prefix_name": 1
                         }
                     ],
                     "min": "",
@@ -82,5 +82,5 @@
     "graphql_field_name": "pageBuilder",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1708897205
+    "modified": 1708906038
 }

@@ -41,7 +41,7 @@
             "display": "seamless",
             "layout": "block",
             "prefix_label": 0,
-            "prefix_name": 0
+            "prefix_name": 1
         },
         {
             "key": "field_65dba14e0d77e",
@@ -64,7 +64,7 @@
         {
             "key": "field_65dba15b0d77f",
             "label": "Featured Projects",
-            "name": "featured_projects",
+            "name": "featured_projects_new",
             "aria-label": "",
             "type": "clone",
             "instructions": "",
@@ -75,14 +75,14 @@
                 "class": "",
                 "id": ""
             },
-            "graphql_field_name": "featuredProjects",
+            "graphql_field_name": "featuredProjectsNew",
             "clone": [
                 "field_65dba1099d1dc"
             ],
             "display": "seamless",
             "layout": "block",
             "prefix_label": 0,
-            "prefix_name": 0
+            "prefix_name": 1
         }
     ],
     "location": [
@@ -109,5 +109,5 @@
     "graphql_field_name": "singlePageHome",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1708897210
+    "modified": 1708922448
 }

@@ -111,7 +111,7 @@
                     ],
                     "post_status": "",
                     "taxonomy": "",
-                    "return_format": "object",
+                    "return_format": "id",
                     "multiple": 1,
                     "allow_null": 0,
                     "bidirectional": 0,
@@ -387,5 +387,5 @@
     "graphql_field_name": "components",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1708897183
+    "modified": 1708922245
 }

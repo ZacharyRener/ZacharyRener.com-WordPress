@@ -22,6 +22,7 @@ function create_post_type_projects() {
 			'has_archive' => true,
 			'supports' => array('title', 'editor', 'thumbnail'),
 			'menu_icon' => 'dashicons-portfolio', // Add the dashicons-portfolio icon
+			'show_in_rest' => true,
 		)
 	);
 }
