@@ -1,0 +1,82 @@
+/*!****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./blocks/post-grid/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap);
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./blocks/post-grid/style.scss (1) ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+.wp-block-code-samples-zach-rener-post-grid {
+  padding: 80px 0;
+  position: relative;
+  width: 100%;
+  max-width: none !important;
+}
+.wp-block-code-samples-zach-rener-post-grid h3 {
+  color: var(--Text-D1, #3a322b);
+  font-family: "Epilogue", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  border-bottom: 1px solid #cac2bc;
+  padding-bottom: 16px;
+}
+.wp-block-code-samples-zach-rener-post-grid .posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .wp-block-code-samples-zach-rener-post-grid .posts {
+    padding: 0;
+  }
+}
+.wp-block-code-samples-zach-rener-post-grid .posts .post img {
+  width: 100%;
+  height: auto;
+  max-height: 212px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.wp-block-code-samples-zach-rener-post-grid .posts .post .date {
+  color: #5e544b;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 1.4px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.wp-block-code-samples-zach-rener-post-grid .posts .post h4 {
+  color: var(--Text-D1, #3a322b);
+  font-family: "Epilogue", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.wp-block-code-samples-zach-rener-post-grid .posts .post .excerpt p {
+  color: var(--Text-D2, #5e544b);
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 0;
+  margin-top: 16px;
+}
+.wp-block-code-samples-zach-rener-post-grid .posts .post > a {
+  text-decoration: none;
+}
+.wp-block-code-samples-zach-rener-post-grid .posts .post > a:hover h4 {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

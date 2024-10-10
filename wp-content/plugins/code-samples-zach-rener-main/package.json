@@ -1,0 +1,19 @@
+{
+  "name": "code-samples-zach-rener",
+  "version": "1.0.0",
+  "description": "Gutenberg block development setup with Vite",
+   "scripts": {
+    "build": "wp-scripts build --webpack-src-dir=blocks --webpack-copy-php",
+    "start": "wp-scripts start --webpack-src-dir=blocks --webpack-copy-php"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wordpress/block-editor": "^12.21.0",
+    "@wordpress/i18n": "^4.53.0",
+    "@wordpress/scripts": "^27.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.71.1"
+  }
+}

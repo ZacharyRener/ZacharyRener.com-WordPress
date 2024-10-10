@@ -1,0 +1,35 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "code-samples-zach-rener/header",
+    "version": "0.1.0",
+    "title": "Header Block",
+    "category": "zacharyrener-category",
+    "icon": "smiley",
+    "description": "",
+    "example": {},
+    "supports": {
+        "html": false
+    },
+    "attributes": {
+        "content": {
+            "type": "string"
+        },
+        "showShadowText": {
+            "type": "boolean",
+            "default": true
+        },
+        "overrideShadowText": {
+            "type": "boolean",
+            "default": false
+        },
+        "customShadowText": {
+            "type": "string"
+        }
+    },
+    "textdomain": "header",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "viewScript": "file:./view.js"
+}

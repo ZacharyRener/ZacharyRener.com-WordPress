@@ -1,0 +1,34 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "code-samples-zach-rener/post-grid",
+    "version": "0.1.0",
+    "title": "Post Grid Block",
+    "category": "zacharyrener-category",
+    "icon": "smiley",
+    "description": "",
+    "example": {},
+    "supports": {
+        "html": false
+    },
+    "attributes": {
+        "postCount": {
+            "type": "number",
+            "default": 3
+        },
+        "postType": {
+            "type": "string",
+            "default": "post"
+        },
+        "title": {
+            "type": "string",
+            "default": "The Latest"
+        }
+    },
+    "textdomain": "post-grid",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "viewScript": "file:./view.js",
+    "render": "file:./render.php"
+}

@@ -1,0 +1,36 @@
+@use "../../styles/variables.scss" as *;
+
+.wp-block-code-samples-zach-rener-header {
+    padding-top: 200px;
+    padding-bottom: 150px;
+    background: $bg_offwhite;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: none !important;
+    overflow: hidden;
+    .textWrapper {
+        position: relative;
+        display: block;
+    }
+    h2 {
+        font-family: $font_epilogue;
+        color: $color_blue;
+        text-align: center;
+        margin: 0 auto;
+        @include size_h2;
+        z-index: 20;
+        position: relative;
+    }
+    .shadow-text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-family: $font_epilogue;
+        color: $color_shadow;
+        @include size_shadow;
+        width: 100%;
+        z-index: 10;
+    }
+}

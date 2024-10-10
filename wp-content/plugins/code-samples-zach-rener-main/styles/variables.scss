@@ -1,0 +1,86 @@
+// Google Fonts Import
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+// Font Family Variables
+$font_epilogue: "Epilogue", sans-serif;
+$font_red_hat: "Red Hat Text", sans-serif;
+
+// Color Variables
+$color_blue: #0a0860;
+$color_shadow: #ede7e5;
+$bg_offwhite: #f4f0ef;
+
+// Mixins for Typography Styles
+// H3 Style
+@mixin size_h3 {
+    color: var(--Text-D1, #3a322b);
+    font-family: $font_epilogue;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+// H4 Style
+@mixin size_h4 {
+    color: var(--Text-D1, #3a322b);
+    font-family: $font_epilogue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+// Date Text Style
+@mixin size_date {
+    color: #5e544b;
+    font-family: $font_red_hat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 1.4px;
+}
+
+// Paragraph Text Style
+@mixin size_paragraph {
+    color: var(--Text-D2, #5e544b);
+    font-family: $font_red_hat;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+// H2 Style
+@mixin size_h2 {
+    font-feature-settings:
+        "clig" off,
+        "liga" off;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 105%;
+    letter-spacing: -1.6px;
+    text-transform: lowercase;
+}
+
+// Shadow Text Style
+@mixin size_shadow {
+    font-feature-settings:
+        "clig" off,
+        "liga" off;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 105%;
+    letter-spacing: -3px;
+    text-transform: lowercase;
+}
+
+// Container Style
+@mixin container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    width: 100%;
+    @media (max-width: 767px) {
+        padding: 0;
+    }
+}

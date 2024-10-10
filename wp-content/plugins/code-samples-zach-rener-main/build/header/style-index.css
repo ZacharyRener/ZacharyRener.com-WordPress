@@ -1,0 +1,55 @@
+/*!*************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./blocks/header/style.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap);
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./blocks/header/style.scss (1) ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+.wp-block-code-samples-zach-rener-header {
+  padding-top: 200px;
+  padding-bottom: 150px;
+  background: #f4f0ef;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: none !important;
+  overflow: hidden;
+}
+.wp-block-code-samples-zach-rener-header .textWrapper {
+  position: relative;
+  display: block;
+}
+.wp-block-code-samples-zach-rener-header h2 {
+  font-family: "Epilogue", sans-serif;
+  color: #0a0860;
+  text-align: center;
+  margin: 0 auto;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 105%;
+  letter-spacing: -1.6px;
+  text-transform: lowercase;
+  z-index: 20;
+  position: relative;
+}
+.wp-block-code-samples-zach-rener-header .shadow-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Epilogue", sans-serif;
+  color: #ede7e5;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 105%;
+  letter-spacing: -3px;
+  text-transform: lowercase;
+  width: 100%;
+  z-index: 10;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

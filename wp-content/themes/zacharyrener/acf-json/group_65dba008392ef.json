@@ -17,10 +17,7 @@
                 "id": ""
             },
             "layout": "block",
-            "show_in_graphql": 1,
-            "graphql_description": "",
-            "graphql_field_name": "mainstage",
-            "graphql_non_null": 0,
+            "acfe_seamless_style": 1,
             "sub_fields": [
                 {
                     "key": "field_65dba0dd9cfa9",
@@ -70,7 +67,11 @@
                     "graphql_field_name": "guideLabel",
                     "graphql_non_null": 0
                 }
-            ]
+            ],
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large"
         },
         {
             "key": "field_65dba1099d1dc",
@@ -87,10 +88,7 @@
                 "id": ""
             },
             "layout": "block",
-            "show_in_graphql": 1,
-            "graphql_description": "",
-            "graphql_field_name": "featuredProjects",
-            "graphql_non_null": 0,
+            "acfe_seamless_style": 1,
             "sub_fields": [
                 {
                     "key": "field_65dba1139d1dd",
@@ -120,9 +118,16 @@
                     "graphql_field_name": "featuredProjects",
                     "graphql_connection_type": "one_to_many",
                     "ui": 1,
-                    "bidirectional_target": []
+                    "bidirectional_target": [],
+                    "save_custom": 0,
+                    "save_post_type": "",
+                    "save_post_status": ""
                 }
-            ]
+            ],
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large"
         },
         {
             "key": "field_65dba4503bdea",
@@ -139,10 +144,7 @@
                 "id": ""
             },
             "layout": "block",
-            "show_in_graphql": 1,
-            "graphql_description": "",
-            "graphql_field_name": "hero",
-            "graphql_non_null": 0,
+            "acfe_seamless_style": 1,
             "sub_fields": [
                 {
                     "key": "field_65dba45b3bdeb",
@@ -188,12 +190,16 @@
                     "media_upload": 1,
                     "delay": 0
                 }
-            ]
+            ],
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large"
         },
         {
             "key": "field_65dba46e3bded",
-            "label": "Image and Text",
-            "name": "image_and_text",
+            "label": "Project Showcase",
+            "name": "project_showcase",
             "aria-label": "",
             "type": "group",
             "instructions": "",
@@ -205,18 +211,135 @@
                 "id": ""
             },
             "layout": "block",
-            "show_in_graphql": 1,
-            "graphql_description": "",
-            "graphql_field_name": "imageAndText",
-            "graphql_non_null": 0,
+            "acfe_seamless_style": 1,
             "sub_fields": [
                 {
-                    "key": "field_65dba47a3bdee",
-                    "label": "Text",
-                    "name": "text",
+                    "key": "field_670730d7edc5d",
+                    "label": "Media",
+                    "name": "media",
                     "aria-label": "",
-                    "type": "text",
+                    "type": "repeater",
                     "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Media",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_6707305121fbd",
+                            "label": "Media Type",
+                            "name": "media_type",
+                            "aria-label": "",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "image": "Image",
+                                "video": "Video"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "allow_in_bindings": 0,
+                            "layout": "vertical",
+                            "save_other_choice": 0,
+                            "parent_repeater": "field_670730d7edc5d"
+                        },
+                        {
+                            "key": "field_65dba4863bdef",
+                            "label": "Image",
+                            "name": "image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6707305121fbd",
+                                        "operator": "==",
+                                        "value": "image"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "allow_in_bindings": 1,
+                            "preview_size": "medium",
+                            "uploader": "",
+                            "acfe_thumbnail": 0,
+                            "parent_repeater": "field_670730d7edc5d"
+                        },
+                        {
+                            "key": "field_65dba4de3bdf1",
+                            "label": "Video",
+                            "name": "video",
+                            "aria-label": "",
+                            "type": "file",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6707305121fbd",
+                                        "operator": "==",
+                                        "value": "video"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "library": "all",
+                            "min_size": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "allow_in_bindings": 1,
+                            "uploader": "",
+                            "parent_repeater": "field_670730d7edc5d"
+                        }
+                    ],
+                    "acfe_repeater_stylised_button": 0
+                },
+                {
+                    "key": "field_670730af98247",
+                    "label": "Sidebar Content",
+                    "name": "sidebar_content",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "Available shortcodes:<br>\r\n[button text=\"Click Me\" url=\"https:\/\/example.com\" new_tab=\"true\" style=\"default\"]",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -225,140 +348,61 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "show_in_graphql": 1,
-                    "graphql_description": "",
-                    "graphql_field_name": "text",
-                    "graphql_non_null": 0
-                },
-                {
-                    "key": "field_65dba4aa3bdf0",
-                    "label": "Media Type",
-                    "name": "media_type",
-                    "aria-label": "",
-                    "type": "radio",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "photo": "Photo",
-                        "video": "Video"
-                    },
-                    "default_value": "",
-                    "return_format": "value",
-                    "allow_null": 0,
-                    "other_choice": 0,
-                    "layout": "vertical",
-                    "show_in_graphql": 1,
-                    "graphql_description": "",
-                    "graphql_field_name": "mediaType",
-                    "graphql_non_null": 0,
-                    "save_other_choice": 0
-                },
-                {
-                    "key": "field_65dba4863bdef",
-                    "label": "Image",
-                    "name": "image",
-                    "aria-label": "",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_65dba4aa3bdf0",
-                                "operator": "==",
-                                "value": "photo"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "url",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "preview_size": "medium",
-                    "show_in_graphql": 1,
-                    "graphql_description": "",
-                    "graphql_field_name": "image"
-                },
-                {
-                    "key": "field_65dba4de3bdf1",
-                    "label": "Video",
-                    "name": "video",
-                    "aria-label": "",
-                    "type": "file",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_65dba4aa3bdf0",
-                                "operator": "==",
-                                "value": "video"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "url",
-                    "library": "all",
-                    "min_size": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "show_in_graphql": 1,
-                    "graphql_description": "",
-                    "graphql_field_name": "video"
-                },
-                {
-                    "key": "field_65dba5173bdf3",
-                    "label": "Categories",
-                    "name": "categories",
-                    "aria-label": "",
-                    "type": "taxonomy",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "taxonomy": "category",
-                    "add_term": 1,
-                    "save_terms": 1,
-                    "load_terms": 1,
-                    "return_format": "object",
-                    "field_type": "checkbox",
-                    "bidirectional": 0,
-                    "show_in_graphql": 1,
-                    "graphql_description": "",
-                    "graphql_field_name": "categories",
-                    "multiple": 0,
-                    "allow_null": 0,
-                    "bidirectional_target": []
+                    "allow_in_bindings": 1,
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
                 }
-            ]
+            ],
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large"
+        },
+        {
+            "key": "field_670738435d2d0",
+            "label": "WYSIWYG",
+            "name": "wysiwyg",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "acfe_seamless_style": 1,
+            "sub_fields": [
+                {
+                    "key": "field_670738435d2d5",
+                    "label": "WYSIWYG",
+                    "name": "wysiwyg",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "Available shortcodes:<br>\r\n[button text=\"Click Me\" url=\"https:\/\/example.com\" new_tab=\"true\" style=\"default\"]",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "allow_in_bindings": 0,
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ],
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large"
         }
     ],
     "location": [
@@ -379,5 +423,12 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1727304621
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1728541865
 }
