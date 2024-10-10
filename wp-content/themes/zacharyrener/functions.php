@@ -25,6 +25,9 @@ function enqueue_custom_css_for_restricted_post_types($hook_suffix) {
                 body .components-dropdown.components-dropdown-menu {
                     display: none;
                 }
+				body .editor-visual-editor {
+					flex: none;
+				}
             </style>';
         } else {
 			echo '<style>
