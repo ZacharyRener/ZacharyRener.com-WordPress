@@ -249,7 +249,8 @@ function redirect_non_admin_and_non_rest_pages() {
     }
 
     // Build the new URL
-    $redirect_url = 'http://localhost:3000' . $request_uri;
+    // $redirect_url = 'http://localhost:3000' . $request_uri;
+	$redirect_url = 'https://www.zacharyrener.com' . $request_uri;
 
     // Perform the redirect
     wp_redirect($redirect_url);
