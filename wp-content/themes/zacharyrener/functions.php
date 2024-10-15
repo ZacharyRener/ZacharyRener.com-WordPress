@@ -255,3 +255,16 @@ function redirect_non_admin_and_non_rest_pages() {
     wp_redirect($redirect_url);
     exit;
 }
+
+function custom_acf_wysiwyg_p_tags($value, $post_id, $field) {
+    // Check if the value is empty, and return early if so
+    if(empty($value)) {
+        return $value;
+    }
+
+    // Automatically wrap the content in <p> tags if not already wrapped
+    return wpautop($value);
+}
+
+// Hook into ACF's load_value filter for WYSIWYG fields
+add_filter('acf/load_value/type=wysiwyg', 'custom_acf_wysiwyg_p_tags', 10, 3);
