@@ -234,8 +234,6 @@ add_shortcode( 'button', function( $atts ) {
 
 });
 
-add_action('init', 'redirect_non_admin_and_non_rest_pages');
-
 function redirect_non_admin_and_non_rest_pages() {
     $request_uri = $_SERVER['REQUEST_URI'];
 
@@ -250,12 +248,18 @@ function redirect_non_admin_and_non_rest_pages() {
 
     // Build the new URL
     // $redirect_url = 'http://localhost:3000' . $request_uri;
-	$redirect_url = 'https://www.zacharyrener.com' . $request_uri;
+	
+	if (defined('WPENGINE_STAGING') && WPENGINE_STAGING) {
+		$redirect_url = 'https://staging.zacharyrener.com' . $request_uri;
+	} else {
+		$redirect_url = 'https://www.zacharyrener.com' . $request_uri;
+	}
 
     // Perform the redirect
     wp_redirect($redirect_url);
     exit;
 }
+add_action('init', 'redirect_non_admin_and_non_rest_pages');
 
 function custom_acf_wysiwyg_p_tags($value, $post_id, $field) {
     // Check if the value is empty, and return early if so
@@ -314,7 +318,7 @@ function enqueue_staging_admin_styles() {
 				margin-top: var(--alertBarHeight);
 			}
 
-			div#wpwrap {
+			div#wpwrap, div#wpadminbar {
 				--alertBarHeight: 34px;
 			}
 
@@ -322,8 +326,12 @@ function enqueue_staging_admin_styles() {
 				background: transparent;
 				color: white;
 			}
-
+			li#wp-admin-bar-customize, li#wp-admin-bar-comments {
+				display: none;
+			}
         </style>';
     }
 }
 add_action('admin_enqueue_scripts', 'enqueue_staging_admin_styles');
+// also enqueue to the frontend
+add_action('wp_enqueue_scripts', 'enqueue_staging_admin_styles');
