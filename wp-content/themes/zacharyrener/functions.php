@@ -247,6 +247,7 @@ add_shortcode( 'button', function( $atts ) {
 });
 
 function redirect_non_admin_and_non_rest_pages() {
+	global $ENV;
     $request_uri = $_SERVER['REQUEST_URI'];
 
     // Do not redirect if the request is for wp-admin, wp-login.php, or the REST API
