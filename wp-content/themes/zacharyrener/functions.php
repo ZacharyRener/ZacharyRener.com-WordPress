@@ -249,7 +249,7 @@ function redirect_non_admin_and_non_rest_pages() {
     // Build the new URL
     // $redirect_url = 'http://localhost:3000' . $request_uri;
 	
-	if (defined('WPENGINE_STAGING') && WPENGINE_STAGING) {
+	if ('staging' === wp_get_environment_type()) {
 		$redirect_url = 'https://staging.zacharyrener.com' . $request_uri;
 	} else {
 		$redirect_url = 'https://www.zacharyrener.com' . $request_uri;
@@ -278,7 +278,7 @@ add_filter('acf/load_value/type=wysiwyg', 'custom_acf_wysiwyg_p_tags', 10, 3);
 // [for wpengine] if the environment is staging, add a notice to the admin bar
 // to locally test, add define('WPENGINE_STAGING', true); to wp-config.php
 function add_staging_notice_to_admin_bar() {
-	if (defined('WPENGINE_STAGING') && WPENGINE_STAGING) {
+	if ('staging' === wp_get_environment_type()) {
 		global $wp_admin_bar;
 		$wp_admin_bar->add_menu(array(
 			'id' => 'staging-notice',
@@ -293,7 +293,7 @@ function add_staging_notice_to_admin_bar() {
 add_action('admin_bar_menu', 'add_staging_notice_to_admin_bar', 999);
 
 function enqueue_staging_admin_styles() {
-    if (defined('WPENGINE_STAGING') && WPENGINE_STAGING) {
+    if ('staging' === wp_get_environment_type()) {
         echo '<style>
             #wpadminbar ul#wp-admin-bar-root-default>li#wp-admin-bar-staging-notice {
 				position: absolute;

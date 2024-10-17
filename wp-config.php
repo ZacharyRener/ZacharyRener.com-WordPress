@@ -91,7 +91,10 @@ define('AUTH_SALT',        'I7ToYC2YHgnfiyZ3V/Sq9HywS87BLse/fT55oMXARLvIqlJ9U1+g
 define('SECURE_AUTH_SALT', 'QfWeZE9zoyL7velWPROMS1NV9Qd+CHhF1xsKFtWJ5L6K46R55Vs5bcGay4eHo9Lo0N6gDqSK3dIokYkcWEOMnA==');
 define('LOGGED_IN_SALT',   '8d3NdHR+K7FeE2Q3HFe3UAY0xFBSwko9SnXaWcXuSfObS9R7UwZWZBeLRvbd9QE+s5fNXY+0AJ6OBoZbStMIqQ==');
 define('NONCE_SALT',       'FgIduSIQIyg21gJbak8wOvYMxRmrX/b3Hc+Sw1tjZy6k/ZCFRLC4QNaFZgmMOlAMd9EWKlwI9E8rcojxp7JaaA==');
-define( 'WP_ENVIRONMENT_TYPE', 'local' );
+
+define( 'WP_ENVIRONMENT_TYPE', 'staging' );
+# Typical options: local, development, staging, production
+
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
@@ -99,7 +102,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
 
-define('WPENGINE_STAGING', true);
+// define('WPENGINE_STAGING', true);
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
