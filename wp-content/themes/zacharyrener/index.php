@@ -1,7 +1,7 @@
 <?php
 
-// get_header();
+get_header();
 
 // header("Location: /wp-admin");
 
-// get_footer();
+get_footer();
