@@ -2,6 +2,17 @@
 
 // define( 'HEADLESS_MODE_CLIENT_URL', 'https://zacharyrener.com' );
 
+if ( isset( $_SERVER['HTTP_HOST'] ) ) {
+    $host = $_SERVER['HTTP_HOST'];
+
+    if ( strpos( $host, 'zachrenerstg' ) !== false ) {
+        define( 'WP_ENVIRONMENT_TYPE', 'staging' );
+    } elseif ( strpos( $host, 'local' ) !== false ) {
+        define( 'WP_ENVIRONMENT_TYPE', 'staging' );
+    } else {
+        define( 'WP_ENVIRONMENT_TYPE', 'production' );
+    }
+}
 
 // Restrict Gutenberg for specific post types and add a toggle in Gutenberg settings panel
 function enqueue_custom_css_for_restricted_post_types($hook_suffix) {

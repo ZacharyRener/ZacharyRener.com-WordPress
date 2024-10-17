@@ -92,7 +92,7 @@ define('SECURE_AUTH_SALT', 'QfWeZE9zoyL7velWPROMS1NV9Qd+CHhF1xsKFtWJ5L6K46R55Vs5
 define('LOGGED_IN_SALT',   '8d3NdHR+K7FeE2Q3HFe3UAY0xFBSwko9SnXaWcXuSfObS9R7UwZWZBeLRvbd9QE+s5fNXY+0AJ6OBoZbStMIqQ==');
 define('NONCE_SALT',       'FgIduSIQIyg21gJbak8wOvYMxRmrX/b3Hc+Sw1tjZy6k/ZCFRLC4QNaFZgmMOlAMd9EWKlwI9E8rcojxp7JaaA==');
 
-define( 'WP_ENVIRONMENT_TYPE', 'staging' );
+// define( 'WP_ENVIRONMENT_TYPE', 'staging' );
 # Typical options: local, development, staging, production
 
 /* That's all, stop editing! Happy publishing. */
